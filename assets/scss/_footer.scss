@@ -1,0 +1,19 @@
+.footer {
+    background-color: $color-dark;
+    color: $color-gray;
+    padding-top: 45px;
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    a {
+        color: $color-gray-dark;
+    }
+
+    &-copy {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
