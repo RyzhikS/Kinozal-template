@@ -1,0 +1,24 @@
+.film-info {
+    font-size: 1.2rem;
+
+    &__well {
+        text-align: center;
+        border-radius: 0 0 4px 4px;
+    }
+
+    &__wrapper {
+        &:not(:last-child) {
+            margin-right: $gap;
+        }
+    }
+
+    &__badge {
+        font-size: 0.96rem;
+    }
+}
+
+.film-comment-form {
+    &__btn {
+        float: right;
+    }
+}
