@@ -1,0 +1,22 @@
+html {
+    font-size: $font-size;
+    overflow-y: scroll;
+}
+
+body {
+    font-size: 1rem;
+    font-family: $font-main;
+}
+
+a {
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
