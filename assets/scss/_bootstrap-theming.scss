@@ -62,3 +62,38 @@
     margin-right: 0;
 }
 
+.panel {
+    background-color: darken($color-white, 4%);
+    border: none;
+    
+    &:not(:last-of-type) {
+        margin-bottom: $gap * 2;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &-body {
+        border: 1px solid $color-gray;
+        border-radius: 0 0 4px 4px;
+    }
+
+    > .panel-heading {
+        color: $color-white;
+        background-color: $color-accent;
+        border-color: $color-accent;
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+    }
+}
+.input{
+    &-lg,
+    &-group-lg > .form-control {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+
