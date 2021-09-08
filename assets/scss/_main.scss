@@ -1,7 +1,7 @@
 .main {
     @extend %margin-bottom-lg;
 }
-.top-films,
+.top-week,
 .new-films {
 
     &-title {
@@ -19,7 +19,7 @@
         margin-bottom: $gap;
 
         &:hover {
-            .top-films-item__thumbnail,
+            .top-week-item__thumbnail,
             .new-films-item__thumbnail {
                 background-color: $color-accent;
                 border-color: $color-accent;
@@ -50,4 +50,43 @@
         }
     }
     
+}
+
+.cinema-news {
+    &-item {
+        &:hover {
+            .cinema-news-item__thumbnail {
+                background-color: $color-accent;
+                border-color: $color-accent;
+            }
+
+            h3 > a {
+                color: $color-accent;
+            }
+
+            .cinema-news-item__btn {
+                background-color: $color-accent;
+            }
+        }
+    
+        &__thumbnail {
+            transition: background-color 0.25s;
+            margin-bottom: 0;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__description {
+            text-align: justify;
+        }
+
+        &__btn {
+            float: right;
+            margin-bottom: $gap * 2;
+            transition: background-color 0.25s;
+        }
+    }
+
 }

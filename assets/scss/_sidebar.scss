@@ -51,7 +51,7 @@
                 content: "";
                 position: absolute;
                 right: 0;
-                bottom: -5px;
+                bottom: -4px;
                 width: calc(100% - #{$image-size-with-padding});
                 height: 1px;
                 background-color: $color-gray;
@@ -81,7 +81,7 @@
         }
 
         &__title {
-            margin-bottom: $local-gap;
+            margin-bottom: 0.5em;
 
         }
 
@@ -92,7 +92,7 @@
 
         &__date {
             text-align: right;
-            color: darken($color-gray, 30%);
+            color: darken($color-gray, 40%);
             font-size: 0.8rem;
         }
     }
