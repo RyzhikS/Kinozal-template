@@ -1,6 +1,7 @@
 .navbar-inverse {
     border-color: transparent;
     background-color: darken($color-dark, 4%);
+    margin-bottom: 0;
 
     .navbar-nav {
         > li > a {
