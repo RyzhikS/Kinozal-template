@@ -81,6 +81,43 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+h1 {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin: -10px 0 1em 0;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f0ad4f;
+}
+
+h2 {
+  font-family: "PT Serif", serif;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  border-bottom: 3px solid #f0ad4f;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f0ad4f;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 .header-logo {
   padding: 100px 0;
   text-align: center;
@@ -97,6 +134,56 @@ a:hover, a:focus {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+.top-films .row,
+.new-films .row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+.top-films-item,
+.new-films-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+.top-films-item:hover .top-films-item__thumbnail,
+.top-films-item:hover .new-films-item__thumbnail,
+.new-films-item:hover .top-films-item__thumbnail,
+.new-films-item:hover .new-films-item__thumbnail {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+.top-films-item:hover h3,
+.new-films-item:hover h3 {
+  color: #ffffff;
+}
+.top-films-item__thumbnail,
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+.top-films-item__image,
+.new-films-item__image {
+  width: 100%;
+}
+.top-films-item__caption,
+.new-films-item__caption {
+  text-align: center;
+}
+.top-films-item__title,
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .vertical-slider {
@@ -220,6 +307,10 @@ a:hover, a:focus {
   right: 15px;
 }
 @media (min-width: 576px) {
+  h2 {
+    margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
+  }
   .header-logo__title {
     font-size: 3.5rem;
     letter-spacing: 0.33em;
@@ -249,6 +340,10 @@ a:hover, a:focus {
   }
 }
 @media (max-width: 575.8px) {
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
   .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;
