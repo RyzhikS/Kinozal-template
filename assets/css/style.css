@@ -245,6 +245,9 @@ section {
   text-align: center;
   border-radius: 0 0 4px 4px;
 }
+.film-info__wrapper {
+  white-space: nowrap;
+}
 .film-info__wrapper:not(:last-child) {
   margin-right: 15px;
 }
