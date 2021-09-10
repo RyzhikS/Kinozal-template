@@ -37,29 +37,29 @@
 @mixin sm-min {
     @media (min-width: $sm) {
         @content;
-  }
+    }
 }
 
 @mixin xs-min {
     @media (min-width: $xs) {
         @content;
-  }
+    }
 }
 
 @mixin lg-md {
     @media (max-width: $lg - 0.2) and (min-width: $md) {
         @content;
-  }
+    }
 }
 
 @mixin md-sm {
     @media (max-width: $md - 0.2) and (min-width: $sm) {
         @content;
-  }
+    }
 }
 
 @mixin sm-xs {
     @media (max-width: $sm - 0.2) and (min-width: $xs) {
         @content;
-  }
+    }
 }

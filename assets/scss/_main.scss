@@ -22,6 +22,7 @@
         margin-right: -$gap-sm;
         margin-bottom: -$gap;
     }
+
     &-item {
         padding-left: $gap-sm;
         padding-right: $gap-sm;
@@ -33,6 +34,7 @@
                 background-color: $color-accent;
                 border-color: $color-accent;
             }
+
             h3 {
                 color: $color-white;
             }
@@ -58,7 +60,7 @@
             font-weight: bold;
         }
     }
-    
+
 }
 
 .cinema-news {
@@ -77,7 +79,7 @@
                 background-color: $color-accent;
             }
         }
-    
+
         &__thumbnail {
             transition: background-color 0.25s;
             margin-bottom: 0;

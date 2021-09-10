@@ -1,4 +1,4 @@
-const { task, series, parallel, src, dest, watch } = require('gulp');
+const {task, series, parallel, src, dest, watch} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync');
 const postcss = require('gulp-postcss');
@@ -26,34 +26,24 @@ const PLUGINS = [
         ],
         cascade: true
     }),
-    mqpacker({ sort: sortCSSmq })
+    mqpacker({sort: sortCSSmq})
 ];
 
 function scss() {
-    return src(PATH.scssFile).
-        pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError)).
-        pipe(postcss(PLUGINS)).
-        pipe(dest(PATH.cssFolder)).
-        pipe(browserSync.stream());
+    return src(PATH.scssFile).pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)).pipe(postcss(PLUGINS)).pipe(dest(PATH.cssFolder)).pipe(browserSync.stream());
 }
 
 function scssDev() {
-    return src(PATH.scssFile, { sourcemaps: true }).
-        pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError)).
-        pipe(postcss(PLUGINS)).
-        pipe(dest(PATH.cssFolder, { sourcemaps: true })).
-        pipe(browserSync.stream());
+    return src(PATH.scssFile, {sourcemaps: true}).pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)).pipe(postcss(PLUGINS)).pipe(dest(PATH.cssFolder, {sourcemaps: true})).pipe(browserSync.stream());
 }
 
 function comb() {
-    return src(PATH.scssFiles).
-        pipe(csscomb()).
-        pipe(dest(PATH.scssFolder));
+    return src(PATH.scssFiles).pipe(csscomb()).pipe(dest(PATH.scssFolder));
 }
 
 function syncInit() {
     browserSync({
-        server: { baseDir: './' },
+        server: {baseDir: './'},
         notify: false
     });
 }

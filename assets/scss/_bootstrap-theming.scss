@@ -22,12 +22,12 @@
 
         > .active > a {
             background-color: $color-primary-dark;
-    
-            &:focus, 
+
+            &:focus,
             &:hover {
                 background-color: $color-primary-light;
             }
-        }    
+        }
     }
 }
 
@@ -36,7 +36,7 @@
         > li {
             margin: 5px 5px 5px 0;
         }
-    }    
+    }
     @include sm {
         margin-bottom: 0;
     }
@@ -65,7 +65,7 @@
 .panel {
     background-color: darken($color-white, 4%);
     border: none;
-    
+
     &:not(:last-of-type) {
         margin-bottom: $gap * 2;
     }
@@ -87,7 +87,8 @@
         letter-spacing: 0.08em;
     }
 }
-.input{
+
+.input {
     &-lg,
     &-group-lg > .form-control {
         font-size: 0.875rem;
